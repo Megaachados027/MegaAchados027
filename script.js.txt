@@ -1,0 +1,39 @@
+const promocoes = [
+  {
+    nome: "Fone JBL Tune 510BT",
+    precoAntigo: "R$299,00",
+    precoAtual: "R$179,00",
+    imagem: "https://images.unsplash.com/photo-1611250201270-ea1b2f403894?auto=format&fit=crop&w=500&q=60",
+    link: "https://www.amazon.com.br/dp/B08N5M7S6K?tag=seulinkafiliado"
+  },
+  {
+    nome: "Smart TV 50'' 4K Samsung",
+    precoAntigo: "R$2.999,00",
+    precoAtual: "R$1.899,00",
+    imagem: "https://images.unsplash.com/photo-1592928301873-c9e1c4b5a0ed?auto=format&fit=crop&w=500&q=60",
+    link: "https://www.magazineluiza.com.br/smart-tv"
+  },
+  {
+    nome: "Echo Dot 5ª Geração",
+    precoAntigo: "R$499,00",
+    precoAtual: "R$299,00",
+    imagem: "https://images.unsplash.com/photo-1677442139624-3b86b54fb08c?auto=format&fit=crop&w=500&q=60",
+    link: "https://www.amazon.com.br/echo-dot"
+  }
+];
+
+const container = document.getElementById('promocoes');
+
+promocoes.forEach(promo => {
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.innerHTML = `
+    <img src="${promo.imagem}" alt="${promo.nome}">
+    <h3>${promo.nome}</h3>
+    <p><del>${promo.precoAntigo}</del></p>
+    <p class="preco">${promo.precoAtual}</p>
+    <a href="${promo.link}" target="_blank">Ver Oferta</a>
+  `;
+  container.appendChild(card);
+});
+

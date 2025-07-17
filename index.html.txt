@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MegaAchados027 - As Melhores Promoções do Dia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>MegaAchados027</h1>
+    <p>As melhores ofertas reunidas num só lugar!</p>
+  </header>
+
+  <main>
+    <section id="promocoes" class="grid">
+      <!-- As promoções serão inseridas via JS -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 MegaAchados027 - Todos os direitos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+S
